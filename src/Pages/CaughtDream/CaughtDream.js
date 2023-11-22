@@ -30,7 +30,7 @@ function CaughtDream() {
             Read my dreams
           </button>
           <button class="back-to-home" onClick={handleBackToHomeClick}>
-            Back to home
+            Back to home1
           </button>
         </div>
       </div>
