@@ -1,0 +1,11 @@
+@import url('https: //fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap');
+
+html {
+  background: linear-gradient(242deg, rgba(127, 172, 214, 0.82) 7.99%, #D6FDFF 56.22%, rgba(214, 253, 255, 0.77) 69.44%, rgba(230, 249, 255, 0.56) 102.68%, rgba(162, 242, 2, 0.00) 102.69%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'klee one', sans-serif;
+}

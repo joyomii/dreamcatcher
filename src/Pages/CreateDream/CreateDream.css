@@ -1,0 +1,112 @@
+.cloud1,
+.cloud2,
+.cloud3 {
+   width: 320px;
+   height: 290px;
+   position: absolute;
+   z-index: 2;
+ }
+
+ .cloud1 {
+   top: 2%;
+   left: -9%;
+   opacity: 0.6;
+ }
+
+ .cloud2 {
+   top: 0;
+   right: 6%;
+   transform: rotateY(180deg);
+   padding: 0;
+   opacity: 0.6;
+ }
+
+ .cloud3 {
+   bottom: 0;
+   right: 24%;
+   opacity: 0.6;
+   top: 60%;
+ }
+
+
+ .title-date-container {
+  margin: auto;
+  margin-top: 70px;
+  width: 900px;
+  height: 680px;
+  background: transparent;
+  padding-top: 40px;
+  border-radius: 20px;
+  border: 1px solid #949494;
+  box-shadow: 18px 18px 31.1px -21px rgba(0, 0, 0, 0.25);
+ }
+
+
+ .title-date {
+   font-weight: bold;
+   margin: auto;
+   display: flex;
+   width: 600px;
+   height: 50px;
+   border: none;
+   font-size: 14px;
+   outline: none;
+   border-bottom: 1px solid #dadada;
+   padding-left: 28px;
+   background: transparent;
+ }
+
+ .myTextarea-container {
+  margin-top: 20px;
+  display: flex;
+ }
+
+ .myTextarea {
+  min-height: 400px;
+  min-width: 600px;
+  max-width: 600px;
+  max-height: 400px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  margin: auto;
+  color: #414141;
+  outline: none;
+  padding-left: 30px;
+  padding-top: 40px;
+  background: transparent;
+  border-radius: 18px;
+  border: 1px solid rgba(54, 107, 150, 0.4);
+  filter: drop-shadow(1px 4px 4px rgba(0, 0, 0, 0.25));
+ }
+
+.imgButton {
+  display: flex;
+  margin: auto;
+  width: 100px;
+  height: 25px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border: 1px solid #c2c2c2;
+  filter: drop-shadow(1px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.imgButton:hover {
+
+}
+
+ .plus-button-container {
+  margin: auto;
+ }
+
+ .imgButton:active {
+   filter: none;
+ }
+
+ .plusImg {
+   margin: auto;
+   width: 22px;
+   height: 20px;
+ }

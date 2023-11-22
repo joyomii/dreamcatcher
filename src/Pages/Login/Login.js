@@ -1,0 +1,108 @@
+import React, { useState } from "react";
+import { Await, useNavigate } from "react-router-dom";
+import "./Login.css";
+import landingPage from "../images/landingPage.png";
+import logoImg from "../images/dreamCatcher.png";
+import holdAGlimpse from "../images/holdAGlimpse.png";
+
+function Login() {
+  const navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    username: "",
+    password: "",
+  });
+
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData({ ...formData, [id]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (formData.username && formData.password) {
+      try {
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+        setShowSuccessMessage(true);
+        setTimeout(() => {
+          navigate("/landingPage?username=$formData.username");
+        }, 2000);
+      } catch (error) {
+        console.error("Error during registration", error);
+      }
+    } else {
+      alert("Please fill out both username and password");
+    }
+  };
+
+  return (
+    <div>
+      <div className="login-container">
+        <div className="left-container">
+          <div className="logo-img-container">
+            <img src={logoImg} alt="dreamCatcher" className="logo-img" />
+          </div>
+          <div className="loginPage-img-container">
+            <img src={landingPage} alt="dream" className="loginPage-img" />
+          </div>
+        </div>
+
+        <div className="right-container">
+          <div className="holdAGlipmse-img-container">
+            <img
+              src={holdAGlimpse}
+              alt="Hold a glimpse"
+              className="holdAGlimpse-img"
+            />
+          </div>
+          <div className="create-account-txt">No account, yet?</div>
+          <div className="signUpButton-container">
+            <button className="signUp-button">Sign up with Google</button>
+          </div>
+          <div className="border-container">
+            <div className="double-border"></div>
+            <div className="or-text">or</div>
+            <div className="double-border"></div>
+          </div>
+          <div className="form-container">
+            <form className="form-login" onSubmit={handleSubmit}>
+              <h3 className="logInToYourAccount-txt">Create a dreamCatcher</h3>
+              <input
+                id="username"
+                className="input-email"
+                placeholder="username"
+                onChange={handleChange}
+              />
+              <input
+                id="password"
+                className="input-password"
+                placeholder="password"
+                onChange={handleChange}
+              />
+              <button type="submit" className="log-in-button">
+                Sign up
+              </button>
+            </form>
+
+            {showSuccessMessage && (
+              <p
+                style={{
+                  color: "green",
+                  position: "absolute",
+                  top: "99%",
+                  font: "8pxpx",
+                }}
+              >
+                Sign-up successful!
+              </p>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Login;
