@@ -1,3 +1,4 @@
+
 .landingPage-container {
   display: flex;
   justify-content: center;
@@ -48,19 +49,18 @@
 
 .welcome-board {
   display: flex;
-  width: 600px;
+  width: 510px;
   height: 200px;
-  transform: rotate(-2.538deg);
+  transform: rotate(-2deg);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background: #FFF;
   margin: auto;
-  margin-top: 0px;
 }
 
 .first-paragraph {
   transform: rotate(2.538deg);
   margin: auto;
-  font-size: 62px;
+  font-size: 3rem;
   opacity: 0.7;
 }
 
@@ -69,9 +69,9 @@
 }
 
 .question-image {
-  width: 600px;
+  width: 512px;
   height: 60px;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 /*-------------LEFT CONTAINER-----------------*/
@@ -81,24 +81,27 @@
 
 .welcome-image-boy {
   display: flex;
-  width: 650px;
-  height: 700px;
+  width: 450px;
+  height: 500px;
   padding: 0;
+}
+
+.landingPage-button-container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
 }
 
 .landingPage-button {
   font-size: 15px;
   width: 200px;
   height: 50px;
-  margin: auto;
-  margin-left: 20%;
   display: flex;
   align-items: center;
   background-color: #366b9c;
   border: none;
   border-radius: 5px;
   color: #fff;
-  padding-left: 28px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
@@ -106,8 +109,7 @@
 .plus-sign {
   width: 30px;
   height: 28px;
-  margin: 0;
-  padding: 0;
+  padding-left: 12px;
   margin-right: 10px;
   transition: transform 3s ease-in-out;
 }

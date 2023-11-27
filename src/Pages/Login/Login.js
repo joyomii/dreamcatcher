@@ -57,18 +57,18 @@ function Login() {
               className="holdAGlimpse-img"
             />
           </div>
-          <div className="create-account-txt">No account, yet?</div>
+          <div className="create-account-txt">no account yet?</div>
           <div className="signUpButton-container">
-            <button className="signUp-button">Sign up with Google</button>
+            <button className="signUp-button">Sign up - Create Account</button>
           </div>
           <div className="border-container">
-            <div className="double-border"></div>
             <div className="or-text">or</div>
-            <div className="double-border"></div>
           </div>
           <div className="form-container">
             <form className="form-login" onSubmit={handleSubmit}>
-              <h3 className="logInToYourAccount-txt">Create a dreamCatcher</h3>
+              <h3 className="logInToYourAccount-txt">
+                <span>Log in to your</span> dreamCatcher <span>Account</span>
+              </h3>
               <input
                 id="username"
                 className="input-email"
@@ -82,7 +82,7 @@ function Login() {
                 onChange={handleChange}
               />
               <button type="submit" className="log-in-button">
-                Sign up
+                Log in
               </button>
             </form>
 
@@ -95,7 +95,7 @@ function Login() {
                   font: "8pxpx",
                 }}
               >
-                Sign-up successful!
+                Log in successful!
               </p>
             )}
           </div>

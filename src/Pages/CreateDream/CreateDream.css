@@ -1,14 +1,14 @@
 .cloud1,
 .cloud2,
 .cloud3 {
-   width: 320px;
-   height: 290px;
+   width: 20vw;
+   height: 35vh;
    position: absolute;
    z-index: 2;
  }
 
  .cloud1 {
-   top: 2%;
+   top: 4vh;
    left: -9%;
    opacity: 0.6;
  }
