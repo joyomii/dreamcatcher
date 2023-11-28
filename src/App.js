@@ -6,7 +6,7 @@ import LandingPage from "./Pages/LandingPage/LandingPage.js";
 import CreateDream from "./Pages/CreateDream/CreateDream.js";
 import CaughtDream from "./Pages/CaughtDream/CaughtDream.js";
 import ListOfDreams from "./Pages/ListOfDreams/ListOfDreams.js";
-import ReReadDreams from "./Pages/ReReadDreams/ReReadDreams.js";
+import DreamDetails from "./Pages/DreamDetails/DreamDetails.js";
 import { DreamProvider } from "./components/DreamContext.js";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
             <Route path="/create-dream" element={<CreateDream />} />
             <Route path="/caught-dream" element={<CaughtDream />} />
             <Route path="/list-dreams" element={<ListOfDreams />} />
-            <Route path="/reread-dreams" element={<ReReadDreams />} />
+            <Route path="/dream-details" element={<DreamDetails />} />
           </Routes>
         </DreamProvider>
       </Router>

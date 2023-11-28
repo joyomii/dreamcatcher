@@ -32,8 +32,8 @@
  .title-date-container {
   margin: auto;
   margin-top: 70px;
-  width: 900px;
-  height: 680px;
+  max-width: 60vw;
+  max-height: 680px;
   background: transparent;
   padding-top: 40px;
   border-radius: 20px;
@@ -46,30 +46,25 @@
    font-weight: bold;
    margin: auto;
    display: flex;
-   width: 600px;
-   height: 50px;
+   width: 45vw;
+   height: 6vh;
    border: none;
    font-size: 14px;
    outline: none;
-   border-bottom: 1px solid #dadada;
-   padding-left: 28px;
    background: transparent;
+   padding-left: 30px;
  }
 
  .myTextarea-container {
-  margin-top: 20px;
   display: flex;
+  justify-content: center;
+  margin-top: 20px;
  }
 
  .myTextarea {
-  min-height: 400px;
-  min-width: 600px;
-  max-width: 600px;
-  max-height: 400px;
-  height: 100%;
-  width: 100%;
+  width: 80vw;
+  height: 30vh;
   border: none;
-  margin: auto;
   color: #414141;
   outline: none;
   padding-left: 30px;

@@ -1,18 +1,6 @@
-
-
 .login-container {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 1, 0.2);
   display: flex;
-  justify-content: center;
-  margin: 2vw;
-  border-radius: 10px;
-  height: 100%;
 }
-
-/* .left-container, 
-.right-container {
-  max-width: 600px;
-} */
 
 /*-----LEFT CONTAINER------*/
 
@@ -20,16 +8,19 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  height: 650px;
-  max-height: 700px;
+  width: auto;
+  /* height: 650px;
+  max-height: 700px; */
 }
 
 .logo-img-container,
 .loginPage-img-container {
-
+  width: 500px;
+  height: 240px;
 }
 
 .logo-img-container {
+  margin: auto;
   display: flex;
   justify-content: center;
 }
@@ -37,13 +28,11 @@
 .logo-img {
   display: flex;
   justify-content: center;
-  width: 350px;
-  height: 100px;
   padding-top: 50px;
 }
 
 .loginPage-img-container {
-  margin-top: 70px;
+  margin: auto;
   display: flex;
   justify-content: center;
 }
@@ -51,21 +40,19 @@
 .loginPage-img {
   display: flex;
   justify-content: center;
-  padding-top: 10px;
-  width: 400px;
 }
 
 .logo-img,
 .loginPage-img {
-  max-width: 300px;
+  max-width: 400px;
   height: auto;
 }
 
 /*------RIGHT CONTAINER-------*/
 
 .right-container {
-  height: 650px;
-  max-height: 700px;
+  height: 100%;
+  max-height: 700vh;
   flex: 1;
   background: rgb(255, 255, 246);
   border-radius: 30px 0 0 30px;
@@ -219,6 +206,14 @@ span {
 
 .input-password:hover {
   outline: 1px solid #366B96;
+}
+
+.show-pass {
+  color: #686868;
+  margin-top: 10px;
+  font-size: 10px;
+  cursor: pointer;
+  border: none;
 }
 
 .log-in-button {

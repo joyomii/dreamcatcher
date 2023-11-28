@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { ScrollRestoration, useNavigate } from "react-router-dom";
 import "./Login.css";
 import landingPage from "../images/landingPage.png";
 import logoImg from "../images/dreamCatcher.png";
@@ -12,7 +12,12 @@ function Login() {
     password: "",
   });
 
+  const [showPassword, setShowPassword] = useState(false);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+
+  const setPasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -22,18 +27,31 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (formData.username && formData.password) {
-      try {
-        await new Promise((resolve) => setTimeout(resolve, 1000));
-        setShowSuccessMessage(true);
-        setTimeout(() => {
-          navigate("/landingPage?username=$formData.username");
-        }, 2000);
-      } catch (error) {
-        console.error("Error during registration", error);
+    if (!formData.username || !formData.password) {
+      alert("Please fill out both username and password");
+      return;
+    }
+
+    if (formData.username.includes("@gmail.com")) {
+      if (
+        /^(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[0-9]).{8,}$/.test(formData.password)
+      ) {
+        try {
+          await new Promise((resolve) => setTimeout(resolve, 1000));
+          setShowSuccessMessage(true);
+          setTimeout(() => {
+            navigate(`/landingPage?username=${formData.username}`);
+          }, 2000);
+        } catch (error) {
+          console.error("Error during registration", error);
+        }
+      } else {
+        alert(
+          "Password must contain a special character, capital case, number and be atleast 8 characters."
+        );
       }
     } else {
-      alert("Please fill out both username and password");
+      alert("Please use a valid Gmail account (e.g., username@gmail.com)");
     }
   };
 
@@ -77,10 +95,15 @@ function Login() {
               />
               <input
                 id="password"
+                type={showPassword ? "text" : "password"}
                 className="input-password"
                 placeholder="password"
                 onChange={handleChange}
               />
+
+              <button className="show-pass" onClick={setPasswordVisibility}>
+                {showPassword ? "Hide" : "Show"} Password
+              </button>
               <button type="submit" className="log-in-button">
                 Log in
               </button>

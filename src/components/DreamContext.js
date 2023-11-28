@@ -9,13 +9,16 @@ export const useDreamContext = () => {
 
 export const DreamProvider = ({ children }) => {
   const [dreams, setDreams] = useState([]);
+  const [selectedDream, setSelectedDream] = useState(null);
 
   const addDream = (dream) => {
     setDreams((prevDreams) => [...prevDreams, dream]);
   };
 
   return (
-    <DreamContext.Provider value={{ dreams, addDream }}>
+    <DreamContext.Provider
+      value={{ dreams, addDream, selectedDream, setSelectedDream }}
+    >
       {children}
     </DreamContext.Provider>
   );

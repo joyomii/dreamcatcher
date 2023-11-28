@@ -4,13 +4,11 @@ import { useDreamContext } from "../../components/DreamContext";
 import "./ListOfDreams.css";
 import listDCLogo from "../images/dreamCatcher.png";
 import listString from "../images/string.png";
-import listDCImg from "../images/sit-dream.png";
-import listCloud from "../images/cloudPic.png";
 
 function ListOfDreams() {
-  const { dreams } = useDreamContext();
-
+  const { dreams, setSelectedDream } = useDreamContext();
   const navigate = useNavigate();
+
   const backToLogin = () => {
     navigate("/landingPage");
   };
@@ -19,10 +17,15 @@ function ListOfDreams() {
     navigate("/create-dream");
   };
 
+  const navigateToDreamDetails = (event, dream) => {
+    event.preventDefault();
+    setSelectedDream(dream);
+    navigate("/dream-details");
+  };
+
   return (
     <div>
       <div className="list-container">
-        <div className="listLeft-container"></div>
         <div className="listLogo-container">
           <img src={listDCLogo} className="listDCLogo" alt="listDCLogo" />
         </div>
@@ -41,7 +44,11 @@ function ListOfDreams() {
           <div className="ul-list-container">
             <ul id="list-container" className="ul-list">
               {dreams.map((dream, index) => (
-                <li key={index} className="list-div">
+                <li
+                  key={index}
+                  className="list-div"
+                  onClick={(event) => navigateToDreamDetails(event, dream)}
+                >
                   <h3 className="dream-title">{dream.title}</h3>
                   <p className="dream-date">{dream.date}</p>
                   <p className="dream-description">{dream.myTextarea}</p>
@@ -61,11 +68,7 @@ function ListOfDreams() {
             </button>
           </div>
         </div>
-
-        <img src={listDCImg} className="listDCImg" alt="catch a dream..." />
       </div>
-      <img src={listCloud} alt="clouds.." className="listCloud1" />
-      <img src={listCloud} alt="clouds" className="listCloud2" />
     </div>
   );
 }

@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap');
 
+*,
+*::before,
+::after {
+  padding-right: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
 html {
   background: linear-gradient(242deg, rgba(127, 172, 214, 0.82) 7.99%, #D6FDFF 56.22%, rgba(214, 253, 255, 0.77) 69.44%, rgba(230, 249, 255, 0.56) 102.68%, rgba(162, 242, 2, 0.00) 102.69%);
   background-repeat: no-repeat;
@@ -17,7 +25,7 @@ html {
 
   .login-container {
     border-radius: 10px;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
   }
@@ -84,14 +92,72 @@ html {
   }
 
   .title-date-container {
-    margin: auto;
-    margin-top: 70px;
-    width: 900vw;
-    height: 680px;
-    background: transparent;
-    padding-top: 40px;
-    border-radius: 20px;
-    border: 1px solid #949494;
-    box-shadow: 18px 18px 31.1px -21px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0;
   }
+
+  /*--------Caught Dream--------*/
+
+  .caughtDreamImg {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .caughtDream-text {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+  }
+
+ /*--------List of Dreams--------*/
+
+  .list-container {
+    display: flex;
+    flex-direction: column;
+    margin: none;
+  }
+
+  .list-logo {
+    width: 100%;
+  }
+
+  .dream-date {
+    font-size: 2rem;
+  } 
+
+  .dream-title,
+  .dream-description {
+    font-size: 1.5rem;
+  }
+
+  .white-background {
+    max-width: 300px;
+    width: 100%;
+    height: 500vh;
+    background: #fff;
+    border-radius: 30px;
+  }
+
+  .listDCImg {
+    display: none;
+  }
+
+  .ul-list {
+    width: 400px;
+    height: 100%;
+  }
+
+  .listButton-container {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .listCatch-a-dream {
+    margin-right: 5px;
+  }
+
 }

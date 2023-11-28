@@ -1,0 +1,55 @@
+.dream-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+.list-description {
+  display: flex;
+  justify-content: center;
+}
+
+.details-row {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+
+.details-item {
+  flex: 1;
+  max-width: 300px;
+}
+
+.button-list {
+  width: 200px;
+  height: 40px;
+  margin: auto;
+  margin-top: 40px;
+  font-family: 'Klee One';
+  font-size: 16px;
+  background: #366b96;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* .dreamDDTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.dreamDDDate {
+  font-size: 1rem;
+  color: #555;
+}
+
+.dreamDDDescription {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+} */
