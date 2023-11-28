@@ -9,35 +9,39 @@
   display: flex;
   flex-direction: column;
   width: auto;
+  
+  justify-content: center;
   /* height: 650px;
   max-height: 700px; */
 }
 
 .logo-img-container,
 .loginPage-img-container {
-  width: 500px;
+  width: 100%;
   height: 240px;
+  display: flex;
+  justify-content: center;
 }
 
 .logo-img-container {
-  margin: auto;
+  
   display: flex;
   justify-content: center;
 }
 
 .logo-img {
+  width:100%;
+  height:80%;
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  /* padding-top: 50px; */
 }
 
-.loginPage-img-container {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-}
+ 
 
 .loginPage-img {
+  width:100%;
+  height:100%;
   display: flex;
   justify-content: center;
 }
