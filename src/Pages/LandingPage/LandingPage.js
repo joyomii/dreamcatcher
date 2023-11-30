@@ -2,7 +2,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./LandingPage.css";
 import dreamCatcherImg from "../images/dreamCatcher.png";
-import string from "../images/string.png";
 import questionImg from "../images/question-image.png";
 import welcomeImg from "../images/welcome-image-boy.png";
 import plusImg from "../images/plus-sign.png";
