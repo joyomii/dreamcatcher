@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   width: auto;
-  
+
   justify-content: center;
   /* height: 650px;
   max-height: 700px; */
@@ -24,24 +24,24 @@
 }
 
 .logo-img-container {
-  
+
   display: flex;
   justify-content: center;
 }
 
 .logo-img {
-  width:100%;
-  height:80%;
+  width: 100%;
+  height: 80%;
   display: flex;
   justify-content: center;
   /* padding-top: 50px; */
 }
 
- 
+
 
 .loginPage-img {
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
 }
@@ -65,6 +65,7 @@
   justify-items: center;
   align-content: center;
   align-items: center;
+  margin: 0;
 }
 
 /* .logo-img,
@@ -83,11 +84,12 @@
 .holdAGlimpse-img {
   display: flex;
   justify-content: center;
-  width: 35vw;
+  width: 80%;
+  margin-top: 10px;
 }
 
-.create-account-txt {
-  margin-top: 4vh;
+.login-account-txt {
+  margin-top: 30px;
   font-size: 1rem;
   color: #366B96;
   font-weight: bold;
@@ -101,9 +103,9 @@
   justify-content: center;
 }
 
-.signUp-button {
+.logIn-button {
   margin-top: 2vh;
-  width: auto;
+  width: 100px;
   display: flex;
   justify-content: center;
   background-color: #366B96;
@@ -114,17 +116,18 @@
   cursor: pointer;
   transition: 0.1s;
   padding: 10px;
+  font-size: 14px;
 }
 
-.signUp-button:hover {
+.logIn-button:hover {
   background-color: #5186b2;
   color: #f9f9f9;
-    transition: 0.1s;
+  transition: 0.1s;
 }
 
-.signUp-button:active {
+.logIn-button:active {
   box-shadow: none;
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 /*-----BORDER-----*/
@@ -133,29 +136,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  align-content: center;
 }
 
 .or-text {
   color: #718096;
-  margin-top: 5vh;
+  margin-top: 40px;
 }
 
 
 /*-----FORM SECTION------*/
 
 .form-container {
-  margin-top: 5vh;
+  margin-top: 40px;
   width: 100%;
-  height: 40%;
+  /* height: 40%; */
   justify-content: center;
   filter: drop-shadow(5px 6px 3.0999999046325684px rgba(127, 172, 214, 0.10));
   display: flex;
   align-items: center;
+  margin-bottom: 60px;
 }
 
 .form-login {
   height: 100%;
-  width: 80%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -165,7 +170,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding-top: 5%;
   padding-bottom: 5%;
- 
+  /* margin-bottom: 60px; */
 }
 
 .logInToYourAccount-txt {
@@ -226,7 +231,7 @@ span {
   border: none;
 }
 
-.log-in-button { 
+.log-in-button {
   width: 90%;
   height: 3em;
   color: #fff;
@@ -237,7 +242,7 @@ span {
   cursor: pointer;
   transition: background-color 0.3s;
   margin-top: 1em;
-  
+
 }
 
 .log-in-button:hover {

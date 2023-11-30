@@ -75,9 +75,9 @@ function Login() {
               className="holdAGlimpse-img"
             />
           </div>
-          <div className="create-account-txt">no account yet?</div>
+          <div className="login-account-txt">Already have an account?</div>
           <div className="signUpButton-container">
-            <button className="signUp-button">Sign up - Create Account</button>
+            <button className="logIn-button">Log in</button>
           </div>
           <div className="border-container">
             <div className="or-text">or</div>
@@ -85,7 +85,7 @@ function Login() {
           <div className="form-container">
             <form className="form-login" onSubmit={handleSubmit}>
               <h3 className="logInToYourAccount-txt">
-                <span>Log in to your</span> dreamCatcher <span>Account</span>
+                <span>Create your</span> dreamCatcher <span>Account</span>
               </h3>
               <input
                 id="username"
