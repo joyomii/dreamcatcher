@@ -1,103 +1,102 @@
-
-.landingPage-container {
-  display: flex;
-  justify-content: center;
+* {
+  font-family: 'Klee One';
 }
 
-.right-container-lp,
-.left-container-lp {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.left-container-lp {
-  background: none !important;
-}
-
-.dreamCatcherImg-container {
-  height: 120px;
-  margin-left: 20px;
-  margin-top: 20px;
+.lp-logo-container {
+  display: block;
+  justify-content: baseline;
+  padding: 20px;
 }
 
 .dreamCatcherImg {
+  margin: auto;
   width: 120px;
   height: 75px;
-  padding: 0px;
-  margin-left: 28px;
-  margin-top: 20px;
 }
 
-.string-container {
+.landingPage-container {
+  display: flex;
+  width: 100%;
+}
+
+
+.right-container-landingPage,
+.left-container-landingPage {
   display: flex;
   justify-content: center;
-  margin-top: 60px;
+  flex-direction: column;
+  height: 80vh;
 }
 
-.stringImg {
-  margin-top: 20px;
-  width: 300px;
-  height: 100px;
-  padding: 0;
+.left-container-landingPage {
+  flex: 3;
+}
+
+.right-container-landingPage {
+  flex: 1;
 }
 
 .welcomeboard-container {
   display: center;
   justify-content: center;
+  height: 350px;
 }
 
 .welcome-board {
   display: flex;
-  width: 510px;
-  height: 200px;
-  transform: rotate(-2deg);
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 70%;
+  height: 230px;
+  /* height: 200px; */
+  transform: rotate(-1.7deg);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background: #FFF;
-  margin: auto;
+  border-radius: 5px;
+  /* margin: auto; */
 }
 
 .first-paragraph {
   transform: rotate(2.538deg);
   margin: auto;
-  font-size: 3rem;
-  opacity: 0.7;
-}
-
-.questionImg-container {
-  margin: auto;
+  font-size: 60px;
+  opacity: 0.66;
+  color: rgb(195, 79, 79);
 }
 
 .question-image {
-  width: 512px;
-  height: 100px;
-  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 78%;
+  padding: 40px;
 }
 
 /*-------------LEFT CONTAINER-----------------*/
 .welcomeImgBoy-container {
-  margin: auto;
+  display: flex;
 }
 
 .welcome-image-boy {
-  display: flex;
   width: 450px;
-  height: 500px;
-  padding: 0;
+  height: 60vh;
 }
 
 .landingPage-button-container {
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding-bottom: 40px;
 }
 
+
 .landingPage-button {
+  padding: 10px;
   font-size: 15px;
-  width: 200px;
-  height: 50px;
-  display: flex;
+  display: flex ;
+  justify-content: center;
   align-items: center;
+  align-content: center;
   background-color: #366b9c;
   border: none;
   border-radius: 5px;
@@ -107,11 +106,8 @@
 }
 
 .plus-sign {
-  width: 30px;
+  width: 20px;
   height: 18px;
-  padding-left: 12px;
-  margin-right: 10px;
-  transition: transform 3s ease-in-out;
 }
 
 .landingPage-button:hover {

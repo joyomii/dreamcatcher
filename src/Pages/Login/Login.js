@@ -105,7 +105,7 @@ function Login() {
                 {showPassword ? "Hide" : "Show"} Password
               </button>
               <button type="submit" className="log-in-button">
-                Log in
+                Sign Up
               </button>
             </form>
 
@@ -118,7 +118,7 @@ function Login() {
                   font: "8pxpx",
                 }}
               >
-                Log in successful!
+                Successfully signed in!
               </p>
             )}
           </div>

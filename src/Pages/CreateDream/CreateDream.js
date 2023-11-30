@@ -30,12 +30,7 @@ function CreateDream() {
   };
 
   return (
-    <div>
-      <div>
-        <img src={cloudPic} className="cloud1" alt="clouds..." />
-        <img src={cloudPic} className="cloud2" alt="clouds..." />
-        <img src={cloudPic} className="cloud3" alt="clouds..." />
-      </div>
+    <div className="createDream-container">
       <div className="title-date-container">
         <input
           type="text"
@@ -53,25 +48,28 @@ function CreateDream() {
           value={dreamData.date}
           onChange={handleChange}
         />
-
-        <div className="myTextarea-container">
-          <textarea
-            id="myTextarea"
-            className="myTextarea"
-            placeholder="About my dream..."
-            rows={5}
-            cols={50}
-            maxlength="600"
-            value={dreamData.myTextarea}
-            onChange={handleChange}
-          ></textarea>
-        </div>
-
-        <div className="plus-button-container">
-          <button className="imgButton" onClick={handleCaughtDreamClick}>
-            <img src={plusImg} className="plusImg" alt="plus sign" />
-          </button>
-        </div>
+      </div>
+      <div className="myTextarea-container">
+        <textarea
+          id="myTextarea"
+          className="myTextarea"
+          placeholder="About my dream..."
+          rows={5}
+          cols={50}
+          maxlength="600"
+          value={dreamData.myTextarea}
+          onChange={handleChange}
+        ></textarea>
+      </div>
+      <div className="CDButton-container">
+        <button className="imgButton" onClick={handleCaughtDreamClick}>
+          <img src={plusImg} className="plusImg" alt="plus sign" />
+        </button>
+      </div>
+      <div>
+        <img src={cloudPic} className="cloud1" alt="clouds..." />
+        <img src={cloudPic} className="cloud2" alt="clouds..." />
+        <img src={cloudPic} className="cloud3" alt="clouds..." />
       </div>
     </div>
   );

@@ -37,19 +37,19 @@ html {
     align-items: center;
   }
 
-  .right-container-lp,
-  .left-container-lp {
-    flex: 1;
-    width: 100%;
+  .lp-logo-container {
+    display: flex !important;
+    justify-content: center;
   }
 
-  .dreamCatcherImg,
-  .stringImg,
-  .welcome-board,
-  .question-image,
+  .welcomeImgBoy-container {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
   .welcome-image-boy {
-    width: 100%;
-    height: auto;
+    width: 60% !important;
+    height: 50% !important;
   }
 
   .landingPage-button-container {
@@ -57,18 +57,78 @@ html {
     justify-content: center;
   }
 
-  .landingPage-button {
-    margin-left: 0;
+  .welcome-board {
+    width: 80% !important;
+    height: 180px !important;
+  }
+
+  .first-paragraph {
+    font-size: 3.5rem !important;
+  }
+
+  .question-image {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 90% !important;
+    padding: 20px !important;
   }
 
   /* -------------Create Dream------------*/
 
+  .createDream-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: auto;
+  }
+
   .title-date-container {
-    width: 100%;
-    height: auto;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin: 0;
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 90vw !important;
+    margin-top: 15px !important;
+    height: 130px !important;
+  }
+
+ .myTextarea-container {
+    min-width: none;
+  } 
+
+  .myTextarea {
+    min-width: 90vw !important;
+  }
+
+  .imgButton {
+    width: 60px !important;
+  }
+
+  .cloud1,
+  .cloud2,
+  .cloud3 {
+    width: 200px;
+    height: 220px;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.5 !important;
+  }
+
+  .cloud1 {
+    top: 4vh;
+    left: -4%;
+  }
+
+  .cloud2 {
+    top: 0;
+    right: 6%;
+    transform: rotateY(180deg);
+    padding: 0;
+  }
+
+  .cloud3 {
+    bottom: 0;
+    right: 5% !important;
+    top: 70% !important;
   }
 
   /*--------Caught Dream--------*/
