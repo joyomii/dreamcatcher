@@ -216,4 +216,13 @@ html {
     margin-right: 5px;
   } */
 
+  /*-----------Dream Details--------*/
+
+  .details-item {
+    height: 80%;
+  }
+
+  .DD-ABoutDream {
+    height: 80% !important;
+  }
 }

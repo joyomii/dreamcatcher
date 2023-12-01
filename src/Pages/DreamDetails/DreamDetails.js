@@ -17,25 +17,29 @@ function DreamDetails() {
 
       {selectedDream && (
         <div className="details-row">
-          <div className="details-item">
-            <label>Title:</label>
-            <div>{selectedDream.title}</div>
+          <div className="DDTitle-Date-container">
+            <div className="details-item">
+              <label className="DD-Title">Title:</label>
+              <div>{selectedDream.title}</div>
+            </div>
+
+            <div className="details-item">
+              <label className="DD-Date">Date:</label>
+              <di className="DD-selectedDreamDate">{selectedDream.date}</di>
+            </div>
           </div>
 
           <div className="details-item">
-            <label>Date:</label>
-            <div>{selectedDream.date}</div>
-          </div>
-
-          <div className="details-item">
-            <label>My Dream:</label>
+            <label className="DD-ABoutDream">About my Dream:</label>
             <div>{selectedDream.myTextarea}</div>
           </div>
         </div>
       )}
-      <button className="button-list" onClick={goBackToList}>
-        Back to my dream list
-      </button>
+      <div className="DDButton-container">
+        <button className="button-list" onClick={goBackToList}>
+          Back to my dream list
+        </button>
+      </div>
     </div>
   );
 }
