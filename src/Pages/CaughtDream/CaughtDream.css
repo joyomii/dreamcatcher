@@ -17,9 +17,10 @@
 
 .caughtDream-text {
   color: #fff;
-  font-size: 2.5rem;
-  position: absolute;
-  top: 50%;
+  font-size: 35px;
+  position: fixed;
+  top: 57%;
+  left: 37%;
 }
 
 .caughtDream-button-container {

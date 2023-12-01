@@ -8,7 +8,7 @@
   max-width: 60%;
 }
 
- .title-date-container {
+.title-date-container {
   display: flex;
   flex-direction: column;
   padding: 25px;
@@ -18,10 +18,10 @@
   border-radius: 20px;
   border: 1px solid #949494;
   box-shadow: 18px 18px 31.1px -21px rgba(0, 0, 0, 0.25);
- }
+}
 
 
- .title-date {
+.title-date {
   height: 30px;
   border: none;
   font-size: 14px;
@@ -29,15 +29,15 @@
   background: transparent;
 }
 
- .myTextarea-container {
+.myTextarea-container {
   display: flex !important;
   flex-direction: row !important;
   justify-content: center !important;
   width: 100% !important;
   margin-top: 10px;
- }
+}
 
- .myTextarea {
+.myTextarea {
   min-width: 54vw;
   width: 100%;
   min-height: 400px;
@@ -51,13 +51,13 @@
   border-radius: 18px;
   border: 1px solid rgba(54, 107, 150, 0.4);
   filter: drop-shadow(1px 4px 4px rgba(0, 0, 0, 0.25));
- }
+}
 
- .CDButton-container {
+.CDButton-container {
   display: flex;
   justify-content: center;
   align-items: center;
- }
+}
 
 .imgButton {
   margin-top: 10px;
@@ -74,42 +74,42 @@
 
 } */
 
- .imgButton:active {
-   filter: none;
- }
+.imgButton:active {
+  filter: none;
+}
 
- .plusImg {
-   margin: auto;
-   width: 22px;
-   height: 20px;
- }
- 
- .cloud1,
+.plusImg {
+  margin: auto;
+  width: 22px;
+  height: 20px;
+}
+
+.cloud1,
 .cloud2,
 .cloud3 {
-   width: 200px;
-   height: 220px;
-   position: absolute;
-   z-index: 2;
- }
+  width: 200px;
+  height: 220px;
+  position: absolute;
+  z-index: 2;
+}
 
- .cloud1 {
-   top: 4vh;
-   left: -5%;
-   opacity: 0.6;
- }
+.cloud1 {
+  top: 4vh;
+  left: -5%;
+  opacity: 0.6;
+}
 
- .cloud2 {
-   top: 0;
-   right: 6%;
-   transform: rotateY(180deg);
-   padding: 0;
-   opacity: 0.6;
- }
+.cloud2 {
+  top: 0;
+  right: 6%;
+  transform: rotateY(180deg);
+  padding: 0;
+  opacity: 0.6;
+}
 
- .cloud3 {
-   bottom: 0;
-   right: 24%;
-   opacity: 0.6;
-   top: 60%;
- }
+.cloud3 {
+  bottom: 0;
+  right: 24%;
+  opacity: 0.6;
+  top: 60%;
+}

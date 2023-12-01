@@ -19,12 +19,15 @@ function CaughtDream() {
   return (
     <div>
       <div className="caughtDream-container">
-        <img
-          src={caughDreamImg}
-          alt="caught a dream!"
-          className="caughtDreamImg"
-        />
-        <p className="caughtDream-text">You've caught a dream!</p>
+        <div className="CDimg-text">
+          <img
+            src={caughDreamImg}
+            alt="caught a dream!"
+            className="caughtDreamImg"
+          />
+          <p className="caughtDream-text">You've caught a dream!</p>
+        </div>
+
         <div className="caughtDream-button-container">
           <button class="read-my-dreams" onClick={handleReadMyDreamsClick}>
             Read my dreams

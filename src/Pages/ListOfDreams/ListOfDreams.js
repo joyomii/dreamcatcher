@@ -26,35 +26,36 @@ function ListOfDreams() {
   return (
     <div>
       <div className="list-container">
-        <div className="listLogo-container">
-          <img src={listDCLogo} className="listDCLogo" alt="listDCLogo" />
-        </div>
-        <div className="white-background">
-          <div className="listString-container">
-            <img src={listString} className="listString" alt="string.." />
+        <div className="listLeft-container">
+          <div className="listLogo-container">
+            <img src={listDCLogo} className="listDCLogo" alt="listDCLogo" />
           </div>
-          <div className="listInput-container">
-            <input
-              type="search"
-              placeholder="Search a dream.."
-              className="search-input"
-            />
-          </div>
-
-          <div className="ul-list-container">
-            <ul id="list-container" className="ul-list">
-              {dreams.map((dream, index) => (
-                <li
-                  key={index}
-                  className="list-div"
-                  onClick={(event) => navigateToDreamDetails(event, dream)}
-                >
-                  <h3 className="dream-title">{dream.title}</h3>
-                  <p className="dream-date">{dream.date}</p>
-                  <p className="dream-description">{dream.myTextarea}</p>
-                </li>
-              ))}
-            </ul>
+          <div className="white-background">
+            <div className="listString-container">
+              <img src={listString} className="listString" alt="string.." />
+            </div>
+            <div className="listInput-container">
+              <input
+                type="search"
+                placeholder="Search a dream.."
+                className="search-input"
+              />
+            </div>
+            <div className="ul-list-container">
+              <ul id="list-container" className="ul-list">
+                {dreams.map((dream, index) => (
+                  <li
+                    key={index}
+                    className="list-div"
+                    onClick={(event) => navigateToDreamDetails(event, dream)}
+                  >
+                    <h3 className="dream-title">{dream.title}</h3>
+                    <p className="dream-date">{dream.date}</p>
+                    <p className="dream-description">{dream.myTextarea}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
 
