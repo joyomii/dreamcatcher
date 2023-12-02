@@ -36,7 +36,8 @@ function CreateDream() {
           type="text"
           id="title"
           className="title-date"
-          placeholder="Enter a title..."
+          placeholder="Click to enter a title..."
+          maxlength="30"
           value={dreamData.title}
           onChange={handleChange}
         />
@@ -53,10 +54,10 @@ function CreateDream() {
         <textarea
           id="myTextarea"
           className="myTextarea"
-          placeholder="About my dream..."
+          placeholder="Click to enter your dream..."
           rows={5}
           cols={50}
-          maxlength="600"
+          maxlength="1000"
           value={dreamData.myTextarea}
           onChange={handleChange}
         ></textarea>
@@ -70,6 +71,7 @@ function CreateDream() {
         <img src={cloudPic} className="cloud1" alt="clouds..." />
         <img src={cloudPic} className="cloud2" alt="clouds..." />
         <img src={cloudPic} className="cloud3" alt="clouds..." />
+        <img src={cloudPic} className="cloud4" alt="clouds..." />
       </div>
     </div>
   );

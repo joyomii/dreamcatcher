@@ -1,28 +1,31 @@
 .createDream-container {
   display: flex;
   flex-direction: column;
-  justify-content: center !important;
-  margin-top: 20px !important;
-  margin: auto;
-  padding: 50px;
-  max-width: 60%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  /* padding: 50px;*/
+  max-width: 100%; 
+  /* margin: auto; */
 }
 
 .title-date-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 25px;
-  width: 100%;
-  height: 80%;
+  width: 50%;
+  /* height: 60%; */
   background: transparent;
   border-radius: 20px;
-  border: 1px solid #949494;
+  border: 3px solid #366b96;
   box-shadow: 18px 18px 31.1px -21px rgba(0, 0, 0, 0.25);
 }
 
 
 .title-date {
-  width: 100%;
+  width: 80%;
   height: 30px;
   border: none;
   font-size: 14px;
@@ -30,28 +33,50 @@
   background: transparent;
 }
 
+#title,
+#date
+ {
+  color: #366b96;
+  border-bottom: 1px solid rgba(54, 107, 150, 0.3);
+}
+
+#title::placeholder {
+  color: #366b96;
+  /* caret-color: ; */
+}
+
+/* #date {
+  color: #366b96;
+} */
+
 .myTextarea-container {
   display: flex !important;
-  flex-direction: row !important;
-  justify-content: center !important;
-  width: 100% !important;
+  justify-content: center;
+  /* flex-direction: row !important; */
+  /* justify-content: center !important; */
+  width: 63% !important;
   margin-top: 10px;
 }
 
 .myTextarea {
-  min-width: 54vw;
-  width: 100%;
-  min-height: 400px;
+  width: 80%;
+  /* min-height: 400px; */
   max-height: 400px;
-  height: 100%;
+  height: 400px;
   border: none;
-  color: #ed8a8a;
+  caret-color: #ed8a8a;
+  color: #bb0d0d;
+  font-size: 14px;
   outline: none;
   padding: 25px;
   background: transparent;
   border-radius: 18px;
-  border: 1px solid rgba(54, 107, 150, 0.4);
-  filter: drop-shadow(1px 4px 4px rgba(0, 0, 0, 0.25));
+  border: 3px solid rgba(199, 103, 103, 0.6);
+  box-shadow: 18px 18px 31.1px -21px rgba(0, 0, 0, 0.25);
+}
+
+.myTextarea::placeholder {
+  color: #ed8a8a;
 }
 
 .CDButton-container {
@@ -61,19 +86,21 @@
 }
 
 .imgButton {
+  background-color: #366b96;
   margin-top: 10px;
-  max-width: 100%;
-  width: 10%;
+  /* max-width: 100%; */
+  width: 100px;
   height: 25px;
-  border: 1px solid #c2c2c2;
+  border: 1px solid #366b96;
   filter: drop-shadow(1px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 10px;
   cursor: pointer;
 }
 
-/* .imgButton:hover {
-
-} */
+.imgButton:hover {
+  background-color: #599bd0;
+  border: none;
+}
 
 .imgButton:active {
   filter: none;
@@ -87,16 +114,17 @@
 
 .cloud1,
 .cloud2,
-.cloud3 {
+.cloud3,
+.cloud4 {
   width: 200px;
   height: 220px;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
 }
 
 .cloud1 {
   top: 4vh;
-  left: -5%;
+  left: -2%;
   opacity: 0.6;
 }
 
@@ -113,4 +141,11 @@
   right: 24%;
   opacity: 0.6;
   top: 60%;
+}
+
+.cloud4 {
+  bottom: 0;
+  right: 80% !important;
+  top: 70% !important;
+  opacity: 0.6;
 }

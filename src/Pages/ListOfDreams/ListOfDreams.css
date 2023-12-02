@@ -29,6 +29,7 @@
   width: 50vw;
   height: 70vh;
   background: #fff;
+  border: 5px solid rgb(244, 145, 145);
   border-radius: 10px;
   padding: 3vh;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -69,39 +70,65 @@
 }
 
 .ul-list-container {
-  padding: 20px;
-  margin-top: 20px;
+  /* height: 10vh; */
+  /* padding: 20px; */
+  margin-top: 15px;
   display: flex;
   justify-content: left;
+  margin-left: 30px;
+  /* margin-left: 20px */
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .ul-list-container::-webkit-scrollbar {
   width: 10px;
   background-color: #b0cfe6;
+  border: 1px solid rgba(53, 113, 163, 0.6);
   border-radius: 5px;
   padding-top: 2px;
 }
 
 .ul-list-container::-webkit-scrollbar-thumb {
   background-color: rgb(244, 145, 145);
-  border-radius: 3px;
+  border-radius: 2px;
 }
+
+/* .ul-list-container::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+} */
 
 .ul-list {
   padding: 0;
-  max-width: 100%;
+  max-width: 300px;
   height: 500px;
 
 }
 
-.list-div {
-  max-height: 50px;
-  margin-top: 5px;
-  overflow-y: auto;
+.dream-title {
+  background-color: #c2d9ec;
+  /* color: whi; */
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 3px;
 }
 
-.list-div::-webkit-scrollbar {
+.dream-date {
+  background-color: rgba(244, 145, 145, 0.3);
+  border-radius: 3px;
+}
+
+.list-div {
+  height: 45px;
+  margin-top: 5px;
+  /* overflow-y: auto; */
+}
+
+.dream-description {
+  display: none;
+}
+
+/* .list-div::-webkit-scrollbar {
   width: 8px;
   background-color: #b0cfe6;
   border-radius: 3px;
@@ -110,7 +137,7 @@
 .list-div::-webkit-scrollbar-thumb {
   border-radius: 5px;
   background-color: #5a9ed6;
-}
+} */
 
 .dream-title {
   max-height: 30px;

@@ -49,7 +49,9 @@ function ListOfDreams() {
                     className="list-div"
                     onClick={(event) => navigateToDreamDetails(event, dream)}
                   >
-                    <h3 className="dream-title">{dream.title}</h3>
+                    <h3 className="dream-title" maxlength="50">
+                      {dream.title}
+                    </h3>
                     <p className="dream-date">{dream.date}</p>
                     <p className="dream-description">{dream.myTextarea}</p>
                   </li>

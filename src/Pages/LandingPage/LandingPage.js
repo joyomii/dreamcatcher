@@ -12,6 +12,10 @@ function LandingPage() {
     navigate("/create-dream");
   };
 
+  const handleReadMyDreamsClick = () => {
+    navigate("/list-dreams");
+  };
+
   return (
     <div>
       <div className="lp-logo-container">
@@ -38,7 +42,7 @@ function LandingPage() {
         </div>
 
         <div className="right-container-landingPage">
-          <div className="welcomeImgBoy-container">
+          <div sclassName="welcomeImgBoy-container">
             <img
               src={welcomeImg}
               alt="welcome!"
@@ -52,6 +56,9 @@ function LandingPage() {
             >
               <img src={plusImg} alt="add a dream" className="plus-sign" />
               Create a dream
+            </button>
+            <button class="read-my-dreams" onClick={handleReadMyDreamsClick}>
+              Read my dreams
             </button>
           </div>
         </div>
