@@ -1,19 +1,39 @@
 
 .caughtDream-container {
-  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  margin-top: 50px;
  }
 
-.caughtDreamImg {
+ .LDStringPoms {
+  width: 30%;
+ }
+
+ .CDtext-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 150px;
+  background-color: #366b96;
+  transform: rotate(-0.9deg);
+  border-radius: 5px;
+  border: 6px solid #fff;
+ }
+
+  .CDtext {
+    color: #fff;
+    font-size: 28px;
+  }
+
+/* .caughtDreamImg {
   width: 100%;
   max-width: 600px;
   height: auto;
- }
+ } */
 
 .caughtDream-text {
   color: #fff;

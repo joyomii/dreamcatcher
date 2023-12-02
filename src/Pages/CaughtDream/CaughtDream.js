@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./CaughtDream.css";
-import caughDreamImg from "../images/caught-a-dream.png";
+import stringPoms from "../images/string-poms.png";
 
 function CaughtDream() {
   const navigate = useNavigate();
@@ -19,13 +19,17 @@ function CaughtDream() {
   return (
     <div>
       <div className="caughtDream-container">
-        <div className="CDimg-text">
-          <img
+        <div>
+          <img src={stringPoms} alt="Nice catch!" className="LDStringPoms" />
+        </div>
+        <div className="CDtext-container">
+          <p className="CDtext">You've caught a dream!</p>
+
+          {/* <img
             src={caughDreamImg}
             alt="caught a dream!"
             className="caughtDreamImg"
-          />
-          <p className="caughtDream-text">You've caught a dream!</p>
+          /> */}
         </div>
 
         <div className="caughtDream-button-container">

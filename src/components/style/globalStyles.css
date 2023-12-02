@@ -15,7 +15,7 @@ html {
   height: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
 
   /* ------------Login Page-----------*/
 
@@ -88,7 +88,7 @@ html {
     display: flex !important;
     justify-content: space-between !important;
     width: 90vw !important;
-    margin-top: 15px !important;
+    margin-top: 10px !important;
     height: 130px !important;
   }
 
@@ -140,18 +140,37 @@ html {
 
   /*--------Caught Dream--------*/
 
-  .caughtDreamImg {
+  /* .caughtDreamImg {
     width: 100%;
     max-width: 300px;
     height: auto;
+  } */
+
+  .caughtDream-container {
+    margin-top: 140px !important;
   }
 
-  .caughtDream-text {
+  .LDStringPoms {
+    width: 200px !important;
+  }
+
+  .CDtext-container {
+    width: 385px !important;
+    height: 120px !important;
+  }
+
+
+  .caughtDream-button-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh ;
+  }
+  /* .caughtDream-text {
     font-size: 1.6rem !important;
     position: absolute;
     top: 50.4% !important;
     left: 20% !important;
-  }
+  } */
 
   /*--------List of Dreams--------*/
 
@@ -191,11 +210,14 @@ html {
   }
 
   .ul-list-container {
-    width: 300px;
+    width: 275px !important;
+    margin-left: 10px !important;
   }
 
   .list-div {
-    width: 280px !important;
+    width: 230px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
   .dandelion2 {

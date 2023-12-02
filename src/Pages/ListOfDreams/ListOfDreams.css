@@ -73,6 +73,7 @@
 .ul-list-container {
   /* height: 10vh; */
   /* padding: 20px; */
+  width: 90%;
   margin-top: 25px;
   display: flex;
   justify-content: left;
@@ -244,16 +245,16 @@
 
 .dandelion2 {
   position: fixed;
-  width: 30vw;
-  bottom: 0%;
+  width: 20vw;
+  bottom: -5%;
   left: 70%;
   transform:  scaleX(-1);
 }
-
+/* 
 .listVertical-design {
   position: fixed;
   width: 30vw;
   height: 90vh;
   bottom: 5%;
   opacity: 0.5;
-}
+} */
