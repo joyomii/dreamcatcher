@@ -37,7 +37,7 @@ function CreateDream() {
           id="title"
           className="title-date"
           placeholder="Click to enter a title..."
-          maxlength="30"
+          maxlength="20"
           value={dreamData.title}
           onChange={handleChange}
         />

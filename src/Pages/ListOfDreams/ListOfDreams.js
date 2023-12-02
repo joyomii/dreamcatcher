@@ -4,6 +4,9 @@ import { useDreamContext } from "../../components/DreamContext";
 import "./ListOfDreams.css";
 import listDCLogo from "../images/dreamCatcher.png";
 import listString from "../images/string.png";
+// import listDreamyPic from "../images/sit-dream.png";
+import dandelion from "../images/dandelions.png";
+// import listVerticalDesign from "../images/ListVertical-design.png";
 
 function ListOfDreams() {
   const { dreams, setSelectedDream } = useDreamContext();
@@ -72,6 +75,14 @@ function ListOfDreams() {
           </div>
         </div>
       </div>
+      {/* <img src={listDreamyPic} alt="Dreamy.." className="listDreamyPic" />
+      <img src={dandelion} alt="dandelion" className="dandelion1" /> */}
+      <img src={dandelion} alt="dandelion2" className="dandelion2" />
+      {/* <img
+        src={listVerticalDesign}
+        alt="happy dream?"
+        className="listVertical-design"
+      /> */}
     </div>
   );
 }

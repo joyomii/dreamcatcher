@@ -174,6 +174,7 @@ html {
   .white-background {
     height: 60vh !important;
     width: 80vw !important;
+    margin-left: 0 !important;
   }
 
   .search-input {
@@ -187,6 +188,22 @@ html {
 
   .listBack-to-home {
     margin-left: 10px;
+  }
+
+  .ul-list-container {
+    width: 300px;
+  }
+
+  .list-div {
+    width: 280px !important;
+  }
+
+  .dandelion2 {
+   display: none;
+  }
+
+  .listVertical-design {
+    display: none;
   }
 
   /*
@@ -204,12 +221,12 @@ html {
 
   .listDCImg {
     display: none;
-  }
+  }*/
 
-  .ul-list {
-    width: 400px;
+  /* .ul-list {
+    width: 400px !mportant;
     height: 100%;
-  } */
+  }  */
 
   /*
   .listButton-container {
@@ -231,5 +248,9 @@ html {
 
   .DD-ABoutDream {
     height: 80% !important;
+  }
+
+  .listDreamyPic {
+    display: none;
   }
 }

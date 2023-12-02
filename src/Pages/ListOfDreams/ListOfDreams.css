@@ -24,9 +24,10 @@
 }
 
 .white-background {
+  /* margin-left: 270px; */
   display: flex;
   flex-direction: column;
-  width: 50vw;
+  width: 45vw;
   height: 70vh;
   background: #fff;
   border: 5px solid rgb(244, 145, 145);
@@ -72,13 +73,15 @@
 .ul-list-container {
   /* height: 10vh; */
   /* padding: 20px; */
-  margin-top: 15px;
+  margin-top: 25px;
   display: flex;
   justify-content: left;
   margin-left: 30px;
+  margin-right: 30px;
   /* margin-left: 20px */
   overflow-y: auto;
   overflow-x: hidden;
+  gap: 16px;
 }
 
 .ul-list-container::-webkit-scrollbar {
@@ -100,8 +103,8 @@
 
 .ul-list {
   padding: 0;
-  max-width: 300px;
   height: 500px;
+  width: auto;
 
 }
 
@@ -119,9 +122,12 @@
 }
 
 .list-div {
-  height: 45px;
-  margin-top: 5px;
+  width: 400px;
+  height: 50px;
+  margin-top: 10px;
+  cursor: pointer;
   /* overflow-y: auto; */
+  border-bottom: 1px solid rgba(54, 107, 150, 0.3);
 }
 
 .dream-description {
@@ -219,6 +225,35 @@
   box-shadow: none;
 }
 
-.list-div {
-  cursor: pointer;
+/* .listDreamyPic {
+  position: fixed;
+  width: 350px;
+  bottom: 10%;
+  left: 60%;
+  transform: scaleX(-1);
+  filter: saturate(102.69%);
+} */
+
+/* .dandelion1 {
+  position: fixed;
+  bottom: 50%;
+  left: -10%;
+  width: 30vw;
+  opacity: 0.8;
+} */
+
+.dandelion2 {
+  position: fixed;
+  width: 30vw;
+  bottom: 0%;
+  left: 70%;
+  transform:  scaleX(-1);
+}
+
+.listVertical-design {
+  position: fixed;
+  width: 30vw;
+  height: 90vh;
+  bottom: 5%;
+  opacity: 0.5;
 }
