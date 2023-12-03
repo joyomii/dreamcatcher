@@ -13,7 +13,9 @@ function Login() {
   });
 
   const [showPassword, setShowPassword] = useState(false);
-  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
+  const [warningMessage, setAlertMessage] = useState("");
 
   const setPasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -27,8 +29,13 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    setAlertMessage("");
+
+    setErrorMessage("");
+    setSuccessMessage("");
+
     if (!formData.username || !formData.password) {
-      alert("Please fill out both username and password");
+      setAlertMessage("Please fill out both username and password");
       return;
     }
 
@@ -37,8 +44,8 @@ function Login() {
         /^(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[0-9]).{8,}$/.test(formData.password)
       ) {
         try {
-          await new Promise((resolve) => setTimeout(resolve, 1000));
-          setShowSuccessMessage(true);
+          await new Promise((resolve) => setTimeout(resolve, 3000));
+          setSuccessMessage(true);
           setTimeout(() => {
             navigate(`/landingPage?username=${formData.username}`);
           }, 2000);
@@ -46,12 +53,14 @@ function Login() {
           console.error("Error during registration", error);
         }
       } else {
-        alert(
+        setErrorMessage(
           "Password must contain a special character, capital case, number and be atleast 8 characters."
         );
       }
     } else {
-      alert("Please use a valid Gmail account (e.g., username@gmail.com)");
+      setErrorMessage(
+        "Please use a valid Gmail account (e.g., username@gmail.com)"
+      );
     }
   };
 
@@ -109,13 +118,39 @@ function Login() {
               </button>
             </form>
 
-            {showSuccessMessage && (
+            {warningMessage && (
+              <p
+                style={{
+                  color: "blue",
+                  position: "absolute",
+                  top: "99%",
+                  fontSize: "10px",
+                }}
+              >
+                {warningMessage}
+              </p>
+            )}
+
+            {errorMessage && (
+              <p
+                style={{
+                  color: "red",
+                  position: "absolute",
+                  top: "99%",
+                  fontSize: "10px",
+                }}
+              >
+                {errorMessage}
+              </p>
+            )}
+
+            {successMessage && (
               <p
                 style={{
                   color: "green",
                   position: "absolute",
                   top: "99%",
-                  font: "8pxpx",
+                  fontSize: "12px",
                 }}
               >
                 Successfully signed in!
